@@ -1,0 +1,117 @@
+@import 'src/utils/utils';
+
+.tabs {
+
+  &__wrapper {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    @media (max-width: $tablet) {
+      margin-right: -30px;
+      margin-left: -30px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    @media (max-width: $phone) {
+      margin-right: -16px;
+      margin-left: -16px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    &--buyer {
+      padding-top: 30px;
+      padding-right: 50px;
+      padding-left: 50px;
+      background-color: $Main-2;
+
+      @media (max-width: $tablet) {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+      @media (max-width: $phone) {
+        padding-top: 20px;
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+    }
+  }
+
+  &__border {
+    border-bottom: 2px solid $Sup-2;
+    flex-grow: 1;
+  }
+
+  &__list {
+    position: relative;
+    display: inline-grid;
+    padding-bottom: 25px;
+    grid-auto-flow: column;
+    grid-template-columns: min-content;
+    grid-column-gap: 40px;
+
+    @media(max-width: $tablet) {
+      padding-bottom: 16px;
+      grid-column-gap: 30px;
+    }
+    @media(max-width: $phone) {
+      padding-bottom: 10px;
+      grid-column-gap: 20px;
+    }
+  }
+
+  &__item {
+    @include Текст-20-reg;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    color: $Main;
+    background-color: transparent;
+    transition: color 0.3s;
+    flex-shrink: 0;
+    white-space: nowrap;
+    cursor: pointer;
+
+    @media(max-width: $tablet) {
+      font-size: 18px;
+    }
+    @media(max-width: $phone) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      @media(min-width: $desktop-only) {
+        color: $Corp-1;
+      }
+    }
+
+    &--active {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        bottom: -27px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $Corp-1;
+        content: '';
+
+        @media(max-width: $tablet) {
+          bottom: -18px;
+        }
+        @media(max-width: $phone) {
+          bottom: -12px;
+          height: 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+/* stylelint-disable */
+@mixin zero {
+  padding: 0;
+  margin: 0;
+}
+
+$title-font: 'Proxima Nova';
+$text-font: 'Source Sans Pro';
+
+$Main: #1E1E1E;
+$Main-2: #FFFFFF;
+
+$Corp-1: #00917C;
+$Corp-2: #007A69;
+$Corp-3: #2CA236;
+
+$Sup-1: #BBBBBB;
+$Sup-2: #EBEBEB;
+$Sup-3: #F5F5F5;
+$Sup-4: #9412FA;
+$Sup-5: #FA3B12;
+
+$desktop: 1300px;
+$tablet: 991px;
+$phone: 767px;
+$desktop-only: $tablet + 1;
+
+@mixin Заголовок-46-extrabold {
+  font-family: $title-font;
+  font-size: 46px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.22;
+}
+
+@mixin Заголовок-36-bold {
+  font-family: $title-font;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.22;
+}
+
+@mixin Заголовок-30-bold {
+  font-family: $title-font;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.22;
+}
+
+@mixin Заголовок-25-bold {
+  font-family: $title-font;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.22;
+}
+
+@mixin Заголовок-20-bold {
+  font-family: $title-font;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.22;
+}
+
+@mixin Заголовок-16-sem {
+  font-family: $title-font;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.22;
+}
+
+@mixin Мал-цена-14-reg-minus {
+  font-family: $title-font;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.22;
+}
+
+@mixin Цена-22-bold {
+  font-family: $title-font;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.22;
+}
+
+@mixin Текст-20-sem {
+  font-family: $text-font;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.26;
+}
+
+@mixin Текст-20-reg {
+  font-family: $text-font;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.26;
+}
+
+@mixin Текст-18-sem {
+  font-family: $text-font;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.26;
+}
+
+@mixin Текст-18-reg {
+  font-family: $text-font;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.26;
+}
+
+@mixin Текст-16-sem {
+  font-family: $text-font;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.26;
+}
+
+@mixin Текст-16-reg {
+  font-family: $text-font;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.26;
+}
+
+@mixin Текст-14-sem {
+  font-family: $text-font;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.26;
+}
+
+@mixin Текст-14-reg {
+  font-family: $text-font;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.26;
+}
+
+@mixin Текст-шильдика-10-bold {
+  font-family: $text-font;
+  font-size: 10px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.26;
+}

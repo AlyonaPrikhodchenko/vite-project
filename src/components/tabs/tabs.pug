@@ -1,0 +1,25 @@
+mixin tabs(props)
+  if props.buyer
+    section.tabs
+      div.container
+        div.tabs__wrapper.tabs__wrapper--buyer
+          div.tabs__border 
+            div.tabs__list 
+              a.tabs__item.tabs__item--active(href="#") Как сделать заказ
+              a.tabs__item(href="#") Доставка и оплата
+              a.tabs__item(href="#") Гарантия
+              a.tabs__item(href="#") Обмен и возврат
+              a.tabs__item(href="#") Официальные дилеры
+              a.tabs__item(href="#") Вопросы и ответы
+  if props.media
+    section.tabs
+      div.container
+        div.tabs__wrapper
+          div.tabs__border 
+            div.tabs__list 
+              a.tabs__item.tabs__item--active(href="#") Все
+              a.tabs__item(href="#") Категория 1
+              a.tabs__item(href="#") Категория 2
+              a.tabs__item(href="#") Категория 3
+              a.tabs__item(href="#") Категория 3
+              a.tabs__item(href="#") Категория 5

@@ -1,0 +1,163 @@
+@import './src/utils/utils';
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+
+  scrollbar-width: thin;
+  scrollbar-color: $Sup-1 transparent;
+}
+
+::selection {
+  background-color: #2ca236;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  font-size: 0;
+  clip: rect(0 0 0 0);
+}
+
+.static {
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+.fslightbox-open {
+  height: unset !important;
+  overflow: unset !important;
+}
+
+body {
+  @include Текст-20-reg;
+  display: flex;
+  min-width: 320px;
+  min-height: calc(var(--vh, 1vh) * 100);
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $text-font;
+  color: $Main;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+
+  @media(max-width: $phone) {
+    font-size: 14px;
+  }
+}
+
+main {
+  flex-grow: 1;
+
+  & > section:last-child {
+    margin-bottom: 100px;
+    flex-grow: 1;
+
+    @media(max-width: $tablet) {
+      margin-bottom: 70px;
+    }
+    @media(max-width: $phone) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+a {
+  text-underline-position: under;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  box-sizing: border-box;
+
+  @media(max-width: $tablet) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media(max-width: $phone) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.text-crop-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.text-crop-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+.star {
+  font-style: normal;
+  color: #f5672b;
+}
+
+@keyframes bounce {
+
+  0% {
+    transform: translateX(1000px);
+  }
+
+  70% {
+    transform: translateX(-30px);
+  }
+
+  90% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
